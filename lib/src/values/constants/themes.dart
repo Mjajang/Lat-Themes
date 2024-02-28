@@ -1,0 +1,83 @@
+import 'package:flutter/material.dart';
+
+class ThemeClass {
+  static ThemeData lightTheme(String selectedFont) {
+    return ThemeData(
+      fontFamily: selectedFont,
+      scaffoldBackgroundColor: Colors.blue.shade50,
+      primaryColor: ThemeData.light().scaffoldBackgroundColor,
+      colorScheme: const ColorScheme.light().copyWith(
+        primary: const Color(0xFFBB1900),
+        onPrimary: const Color(0xFFFFFFFF),
+        primaryContainer: const Color(0xFFFFDAD3),
+        onPrimaryContainer: const Color(0xFF3F0300),
+        secondary: const Color(0xFF775750),
+        onSecondary: const Color(0xFFFFFFFF),
+        secondaryContainer: const Color(0xFFFFDAD3),
+        onSecondaryContainer: const Color(0xFF2C1511),
+        tertiary: const Color(0xFF9B4052),
+        onTertiary: const Color(0xFFFFFFFF),
+        tertiaryContainer: const Color(0xFFFFD9DD),
+        onTertiaryContainer: const Color(0xFF400013),
+        error: const Color(0xFFBA1A1A),
+        errorContainer: const Color(0xFFFFDAD6),
+        onError: const Color(0xFFFFFFFF),
+        onErrorContainer: const Color(0xFF410002),
+        background: const Color(0xFFF8FDFF),
+        onBackground: const Color(0xFF001F25),
+        surface: const Color(0xFFF8FDFF),
+        onSurface: const Color(0xFF001F25),
+        surfaceVariant: const Color(0xFFF5DDD9),
+        onSurfaceVariant: const Color(0xFF534340),
+        outline: const Color(0xFF85736F),
+        onInverseSurface: const Color(0xFFD6F6FF),
+        inverseSurface: const Color(0xFF00363F),
+        inversePrimary: const Color(0xFFFFB4A6),
+        shadow: const Color(0xFF000000),
+        surfaceTint: const Color(0xFFBB1900),
+        outlineVariant: const Color(0xFFD8C2BD),
+        scrim: const Color(0xFF000000),
+      ),
+    );
+  }
+
+  static ThemeData darkTheme(String selectedFont) {
+    return ThemeData(
+      fontFamily: selectedFont,
+      scaffoldBackgroundColor: Colors.blueGrey.shade900,
+      primaryColor: ThemeData.dark().scaffoldBackgroundColor,
+      colorScheme: const ColorScheme.dark().copyWith(
+        primary: const Color(0xFFFFB4A6),
+        onPrimary: const Color(0xFF660900),
+        primaryContainer: const Color(0xFF8F1000),
+        onPrimaryContainer: const Color(0xFFFFDAD3),
+        secondary: const Color(0xFFE7BDB5),
+        onSecondary: const Color(0xFF442A24),
+        secondaryContainer: const Color(0xFF5D3F3A),
+        onSecondaryContainer: const Color(0xFFFFDAD3),
+        tertiary: const Color(0xFFFFB2BC),
+        onTertiary: const Color(0xFF5F1126),
+        tertiaryContainer: const Color(0xFF7D293B),
+        onTertiaryContainer: const Color(0xFFFFD9DD),
+        error: const Color(0xFFFFB4AB),
+        errorContainer: const Color(0xFF93000A),
+        onError: const Color(0xFF690005),
+        onErrorContainer: const Color(0xFFFFDAD6),
+        background: const Color(0xFF001F25),
+        onBackground: const Color(0xFFA6EEFF),
+        surface: const Color(0xFF001F25),
+        onSurface: const Color(0xFFA6EEFF),
+        surfaceVariant: const Color(0xFF534340),
+        onSurfaceVariant: const Color(0xFFD8C2BD),
+        outline: const Color(0xFFA08C89),
+        onInverseSurface: const Color(0xFF001F25),
+        inverseSurface: const Color(0xFFA6EEFF),
+        inversePrimary: const Color(0xFFBB1900),
+        shadow: const Color(0xFF000000),
+        surfaceTint: const Color(0xFFFFB4A6),
+        outlineVariant: const Color(0xFF534340),
+        scrim: const Color(0xFF000000),
+      ),
+    );
+  }
+}
