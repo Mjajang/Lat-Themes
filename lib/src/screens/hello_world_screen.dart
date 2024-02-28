@@ -30,8 +30,9 @@ class _HelloWorldScreenState extends State<HelloWorldScreen> {
           ),
         ],
       ),
-      body: const Center(
-        child: Text('Hello World!'),
+      body: ListView(
+        physics: const BouncingScrollPhysics(),
+        children: [],
       ),
     );
   }
