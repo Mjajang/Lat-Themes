@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lat_theme/src/values/components/components.dart';
 
 import 'setting_app_screen.dart';
 
@@ -16,7 +17,7 @@ class _HelloWorldScreenState extends State<HelloWorldScreen> {
       appBar: AppBar(
         title: const Text("Latihan Theme"),
         actions: [
-          IconButton.filledTonal(
+          IconButton(
             tooltip: 'About app',
             onPressed: () {
               Navigator.push(
@@ -32,7 +33,13 @@ class _HelloWorldScreenState extends State<HelloWorldScreen> {
       ),
       body: ListView(
         physics: const BouncingScrollPhysics(),
-        children: [],
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+        children: [
+          CustomButton.filled(
+            onPressed: () {},
+            label: 'Splash Screen',
+          ),
+        ],
       ),
     );
   }
