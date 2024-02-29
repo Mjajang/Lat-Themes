@@ -39,7 +39,7 @@ class ThemeClass {
       onPrimary: Color(0xffffffff),
       primaryContainer: Color(0xffbaf0b6),
       onPrimaryContainer: Color(0xff002105),
-      secondary: Color(0xff735c0c),
+      secondary: Color(0xffFFCC00),
       onSecondary: Color(0xffffffff),
       secondaryContainer: Color(0xffffe08b),
       onSecondaryContainer: Color(0xff241a00),

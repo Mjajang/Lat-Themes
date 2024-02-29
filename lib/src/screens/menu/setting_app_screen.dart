@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'cubit/font_setting/font_setting_cubit.dart';
+import '../cubit/font_setting/font_setting_cubit.dart';
 
 class SettingAppScreen extends StatefulWidget {
   const SettingAppScreen({super.key});
